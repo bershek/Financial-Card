@@ -39,10 +39,11 @@ npm install
 
 ```
 src/
-├─ features/ratingsDashboard/   # Dashboard components and utils
+├─ api/                         # API requests and services
+├─ common/                      # Shared UI components, constants, helpers
 ├─ common/components/           # Reusable UI components (CardSection, Skeleton, etc.)
+├─ features/ratingsDashboard/   # Dashboard components and utils
 ├─ hooks/                       # Custom React hooks
-├─ utils/                       # Utility functions
 └─ App.tsx                      # Main application entry
 ```
 
