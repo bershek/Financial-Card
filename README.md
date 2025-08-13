@@ -1,7 +1,3 @@
-import { writeFile } from "fs/promises";
-
-const content = `# Financial Card
-
 > A React + TypeScript project for Financial Card dashboard.  
 > Includes lazy-loaded components, React Query integration, TailwindCSS styling, and unit tests with Vitest.
 
@@ -27,7 +23,7 @@ npm install
 | Command                | Description |
 |------------------------|-------------|
 | `npm run dev`           | Start development server and open in browser |
-| `npm run build`         | Build the project into the \`dist\` folder |
+| `npm run build`         | Build the project into the `dist` folder |
 | `npm run lint`          | Show ESLint errors and warnings |
 | `npm run lint:fix`      | Automatically fix ESLint issues |
 | `npm run test`          | Run unit tests with Vitest |
