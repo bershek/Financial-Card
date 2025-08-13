@@ -16,35 +16,35 @@ const content = `# Financial Card
 ### Installation
 Clone the repository and install dependencies:
 
-\`\`\`bash
+```
 git clone git@github.com:bershek/Financial-Card.git
 cd Financial-Card
 npm install
-\`\`\`
+```
 
 ### Available Scripts
 
 | Command                | Description |
 |------------------------|-------------|
-| \`npm run dev\`           | Start development server and open in browser |
-| \`npm run build\`         | Build the project into the \`dist\` folder |
-| \`npm run lint\`          | Show ESLint errors and warnings |
-| \`npm run lint:fix\`      | Automatically fix ESLint issues |
-| \`npm run test\`          | Run unit tests with Vitest |
-| \`npm run test:watch\`    | Run tests in watch mode |
+| `npm run dev`           | Start development server and open in browser |
+| `npm run build`         | Build the project into the \`dist\` folder |
+| `npm run lint`          | Show ESLint errors and warnings |
+| `npm run lint:fix`      | Automatically fix ESLint issues |
+| `npm run test`          | Run unit tests with Vitest |
+| `npm run test:watch`    | Run tests in watch mode |
 
 ---
 
 ## 🛠 Project Structure
 
-\`\`\`
+```
 src/
 ├─ features/ratingsDashboard/   # Dashboard components and utils
 ├─ common/components/           # Reusable UI components (CardSection, Skeleton, etc.)
 ├─ hooks/                       # Custom React hooks
 ├─ utils/                       # Utility functions
 └─ App.tsx                      # Main application entry
-\`\`\`
+```
 
 ---
 
@@ -63,12 +63,10 @@ src/
 
 1. Start dev server:
 
-\`\`\`bash
-npm run dev
-\`\`\`
+```npm run dev```
 
-2. Open the app in Chrome (usually \`http://localhost:5173\`)  
-3. Edit components in \`src/\` — changes auto-reload  
+2. Open the app in Chrome (usually `http://localhost:5173`)  
+3. Edit components in `src/` — changes auto-reload  
 
 ---
 
@@ -76,15 +74,12 @@ npm run dev
 
 Run unit tests:
 
-\`\`\`bash
-npm run test
-\`\`\`
+
+```npm run test```
 
 Run in watch mode for TDD:
 
-\`\`\`bash
-npm run test:watch
-\`\`\`
+```npm run test:watch```
 
 ---
 
@@ -92,21 +87,16 @@ npm run test:watch
 
 Check for ESLint errors:
 
-\`\`\`bash
-npm run lint
-\`\`\`
+```npm run lint```
 
 Fix errors automatically:
 
-\`\`\`bash
-npm run lint:fix
-\`\`\`
+```npm run lint:fix```
 
 Format code with Prettier (optional):
 
-\`\`\`bash
-npm run prettify
-\`\`\`
+
+```npm run prettify```
 
 ---
 
@@ -114,9 +104,7 @@ npm run prettify
 
 Create production build:
 
-\`\`\`bash
-npm run build
-\`\`\`
+```npm run build```
 
 Files will be in the \`dist/\` folder.
 
@@ -125,7 +113,7 @@ Files will be in the \`dist/\` folder.
 ## 📖 Notes
 
 - Make sure to use Node.js v14+  
-- This project uses \`React.lazy\` and \`Suspense\` for component-level code splitting  
+- This project uses `React.lazy` and `Suspense` for component-level code splitting  
 - All API requests are handled via React Query  
 
 ---
@@ -133,7 +121,3 @@ Files will be in the \`dist/\` folder.
 ## 🔗 Links
 
 - [GitHub Repository](https://github.com/bershek/Financial-Card)
-`;
-
-await writeFile("README.md", content, "utf-8");
-console.log("README.md successfully created!");
